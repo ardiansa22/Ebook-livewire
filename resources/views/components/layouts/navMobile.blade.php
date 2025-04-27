@@ -1,0 +1,6 @@
+<nav class="mobile-navbar d-md-none">
+    <a href="" class="nav-item"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="" class="nav-item"><i class="fas fa-map-marker-alt"></i><span>Spot</span></a>
+    <a href="" class="nav-item"><i class="fas fa-calendar-alt"></i><span>Sesi</span></a>
+    <a href="#" class="nav-item"><i class="fas fa-user"></i><span>Profil</span></a>
+  </nav>
