@@ -19,7 +19,7 @@ class Books extends Component
     {
         $books = Book::with('category')->get();
         $categories = Category::all();
-        return view('livewire.admin.books', compact('books', 'categories'));
+        return view('livewire.admin.books', compact('books', 'categories'))->layout('layouts.admin');
     }
 
     public function save()

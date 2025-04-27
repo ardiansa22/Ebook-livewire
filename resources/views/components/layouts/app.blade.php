@@ -7,7 +7,6 @@
 
     @include('components.layouts.navMobile')
 
-    @include('components.layouts.searcbar')
 
     <main>
         {{$slot}}

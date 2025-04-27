@@ -6,9 +6,9 @@
             <i class="fa-regular fa-user"></i>
         </button>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">Admin</a></li>
+            <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
             <li><a class="dropdown-item" href="#">Pengaturan</a></li>
-            <li><a class="dropdown-item" href="#">Keluar</a></li>
+            <li><a class="dropdown-item" href="">Keluar</a></li>
         </ul>
     </div>
 </div>

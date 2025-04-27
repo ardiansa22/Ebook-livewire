@@ -5,6 +5,8 @@ namespace App\Livewire;
 use App\Models\Book;
 use App\Models\Transaction;
 use App\Models\Userbook;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Livewire\Component;
 
 class BookShow extends Component
@@ -35,6 +37,6 @@ class BookShow extends Component
 
     public function render()
     {
-        return view('livewire.book-show');
+        return view('livewire.user.book-show');
     }
 }

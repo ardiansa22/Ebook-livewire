@@ -1,6 +1,7 @@
 
 <div class="container mt-3">
     <div class="row g-4 mt-3 detail">
+        @include('components.layouts.searcbar')
         <!-- Kolom 1: Galeri Gambar dan Judul Tempat -->
         <div class="col-md-6">
             <div class="card shadow-sm border-0 position-relative">
@@ -48,32 +49,11 @@
                 </p>
             </div>
         </div>
-        <!-- Kolom 2: Fasilitas -->
-
-        <!-- Kolom 3: Kebijakan + Umpan Larangan -->
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 p-3">
-                <h6 class="fw-bold mb-3">Kebijakan</h6>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-clock text-danger me-2"></i> Check-in: 14:00</li>
-                    <li><i class="fas fa-clock text-success me-2"></i> Check-out: 12:00</li>
-                    <li><i class="fas fa-smoking-ban text-muted me-2"></i> Dilarang Merokok</li>
-                    <li><i class="fas fa-paw text-warning me-2"></i> Hewan Peliharaan Tidak Diizinkan</li>
-                </ul>
-                <h6 class="fw-bold text-danger mt-3">Umpan Larangan</h6>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-ban text-danger me-2"></i> Dilarang membawa makanan dari luar</li>
-                    <li><i class="fas fa-glass-martini-alt text-danger me-2"></i> Dilarang membawa minuman beralkohol</li>
-                    <li><i class="fas fa-volume-up text-danger me-2"></i> Dilarang membuat kebisingan setelah jam 22:00</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Tombol "Mancing Yuk" -->
+        
         <div class="col-md-12 text-center mt-4">
-            <a href="" class="btn btn-prim rounded-pill shadow-sm">
-                🎣 Mancing Yuk!
-            </a>
+            <button class="btn btn-prim rounded-pill shadow-sm" wire:click ='buy'>Buy</button>
         </div>
+        
         <div class="card shadow-sm p-3">
             <h6 class="fw-bold">💬 Diskusi</h6>
             <!-- Form Tambah Komentar -->
@@ -88,7 +68,7 @@
                     <div class="d-flex justify-content-between">
                         <strong>Ferian</strong> <small class="text-muted">2 menit lalu</small>
                     </div>
-                    <p class="mb-1">Bagaimana kondisi air di sini?</p>
+                    <p class="mb-1">Bagaiman Alur Bukunya</p>
                     <div class="d-flex gap-2">
                         <button class="btn btn-sm btn-outline-secondary" onclick="replyComment()">Balas</button>
                         <button class="btn btn-sm btn-outline-success">👍 3</button>
@@ -96,8 +76,8 @@
                     </div>
                     <!-- Balasan -->
                     <div class="reply border-start ps-3 mt-2">
-                        <strong>Pengelola</strong> <small class="text-muted">1 menit lalu</small>
-                        <p class="mb-1">Airnya jernih dan cukup tenang, cocok untuk mancing!</p>
+                        <strong>Unknow</strong> <small class="text-muted">1 menit lalu</small>
+                        <p class="mb-1">Cukup Menarik bagi yang suka misteri</p>
                     </div>
                 </div>
             </div>
